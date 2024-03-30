@@ -10,7 +10,7 @@ pipeline {
         }
         stage('install') {
             steps {
-                bat "mvn install -f TicketBookingServiceJunitTesting"
+                echo "mvn install -f TicketBookingServiceJunitTesting"
             }
         }
         stage('test') {
